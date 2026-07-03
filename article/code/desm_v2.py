@@ -25,6 +25,15 @@ V1 bugs corrected:
   - GMM/Arellano–Bond design mismatch (F < 10, AR(2) p=0.0056) corrected by
     the two-tier direct OLS strategy of M06.
 
+V2 bug found and fixed in this module: main() previously loaded the raw
+panel without excluding World Bank regional/income-group aggregates (e.g.
+'World', 'OECD members', 'Sub-Saharan Africa'), which were consequently
+counted and regressed on as if each were a country. See REGIONAL_AGGREGATES
+below main(). The corrected panel has N=178 countries, matching the figure
+now reported throughout the article (previously misstated as 295, a
+holdover from the V1 dataset that was never updated when the project
+switched to this panel).
+
 Known scope limitation (disclosed in the manuscript, Remark rem:impl_status,
 §Computational Implementation): this module implements the first-generation
 single-lag AR(1) specification (estimate_phi1(), DESMTransition, psi_inf =
@@ -1109,6 +1118,46 @@ def run_full_estimation(
 # 18. ENTRY POINT
 # ─────────────────────────────────────────────────────────────────────────────
 
+# World Bank regional/income-group aggregates present in the 'Country Name'
+# column of the raw source series (e.g. 'World', 'OECD members',
+# 'Sub-Saharan Africa') that must be excluded before any cross-country
+# statistic is computed, since they are not countries and double-count the
+# units they aggregate. This module previously omitted this filter entirely.
+# This exact-match list (rather than a keyword regex) was verified name by
+# name against the actual panel_causal.csv 'Country Name' column; a
+# keyword-regex approach was tried first and rejected because it both
+# under-excludes (misses e.g. "Early-demographic dividend", which contains
+# none of the obvious keywords) and over-excludes (a bare 'IDA' keyword
+# matches inside "Trinidad and Tobago").
+REGIONAL_AGGREGATES = {
+    "Africa Eastern and Southern", "Africa Western and Central",
+    "Arab World", "Caribbean small states", "Central Europe and the Baltics",
+    "Early-demographic dividend", "East Asia & Pacific",
+    "East Asia & Pacific (IDA & IBRD countries)",
+    "East Asia & Pacific (excluding high income)", "Euro area",
+    "Europe & Central Asia", "Europe & Central Asia (IDA & IBRD countries)",
+    "Europe & Central Asia (excluding high income)", "European Union",
+    "Fragile and conflict affected situations",
+    "Heavily indebted poor countries (HIPC)", "High income",
+    "IBRD only", "IDA & IBRD total", "IDA blend", "IDA only", "IDA total",
+    "Late-demographic dividend", "Latin America & Caribbean",
+    "Latin America & Caribbean (excluding high income)",
+    "Latin America & the Caribbean (IDA & IBRD countries)",
+    "Least developed countries: UN classification",
+    "Low & middle income", "Low income", "Lower middle income",
+    "Middle East & North Africa",
+    "Middle East & North Africa (IDA & IBRD countries)",
+    "Middle East & North Africa (excluding high income)",
+    "Middle income", "North America", "Not classified", "OECD members",
+    "Other small states", "Pacific island small states",
+    "Post-demographic dividend", "Pre-demographic dividend", "Small states",
+    "South Asia", "South Asia (IDA & IBRD)", "Sub-Saharan Africa",
+    "Sub-Saharan Africa (IDA & IBRD countries)",
+    "Sub-Saharan Africa (excluding high income)", "Upper middle income",
+    "World",
+}
+
+
 def main() -> None:
     """
     Load primary panel, run estimation pipeline, print diagnostics.
@@ -1122,7 +1171,11 @@ def main() -> None:
     print("Loading primary panel ...")
     raw = pd.read_csv(data_path)
 
-    # Keep rows with both gdp_pc and gfcf_gdp
+    # Exclude World Bank regional/income-group aggregates (see
+    # REGIONAL_AGGREGATES above) before keeping rows with both gdp_pc and
+    # gfcf_gdp, matching the panel definition used throughout the article
+    # (N=178 countries, 1960-2021).
+    raw = raw[~raw['Country Name'].isin(REGIONAL_AGGREGATES)]
     raw = raw.dropna(subset=['gdp_pc', 'gfcf_gdp'])
     raw = raw[raw['gdp_pc'] > 0]
 

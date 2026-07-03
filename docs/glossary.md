@@ -44,7 +44,7 @@ response checks (Pesaran–Smith 1995).
 **Panel (data)** — A dataset that tracks the same units (here, countries)
 repeatedly over time; distinguished from a pure cross-section (one
 observation per country) or a pure time series (one country over time).
-The article's primary panel spans 295 countries and 62 years,
+The article's primary panel spans 178 countries and 62 years,
 unbalanced (not every country has data for every year).
 
 **Persistence multiplier (`ψ_∞`)** — The long-run amplification factor by

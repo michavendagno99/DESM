@@ -4,7 +4,7 @@
 **Affiliation:** Pontificia Universidad Javeriana, Facultad de Ingeniería, Bogotá, D.C., Colombia
 **Contact:** [mstephen-arias@javeriana.edu.co](mailto:mstephen-arias@javeriana.edu.co)
 
-This repository accompanies the article *"A Minimal Axiomatic Theory of National Macroeconomic Dynamics with Emergent Regime Structure,"* which develops **DESM** (Dynamic Economic State Model): a compact mathematical theory of how national economies grow, stagnate, or fall into poverty traps — built from six axioms and tested against a 295-country, 62-year panel of World Bank data.
+This repository accompanies the article *"A Minimal Axiomatic Theory of National Macroeconomic Dynamics with Emergent Regime Structure,"* which develops **DESM** (Dynamic Economic State Model): a compact mathematical theory of how national economies grow, stagnate, or fall into poverty traps — built from six axioms and tested against a 178-country, 62-year panel of World Bank data.
 
 > This README sells the idea and orients you around the repository. It does not restate the article's proofs — for those, read the article itself (linked below). For an accessible walkthrough of the ideas, see [`docs/`](docs/).
 

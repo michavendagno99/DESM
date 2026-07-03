@@ -8,7 +8,7 @@
 ### What is DESM, in one sentence?
 
 A minimal, six-axiom mathematical theory of how a country's log GDP per
-capita evolves over time, calibrated and validated against a 295-country,
+capita evolves over time, calibrated and validated against a 178-country,
 62-year panel. See [`model-explained.md`](model-explained.md).
 
 ### Is this a new dataset, or a new model on existing data?

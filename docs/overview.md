@@ -38,7 +38,7 @@ practice. The article's methodology is designed to close that gap
 directly:
 
 1. **Establish the empirical benchmark before proposing any model.** Ten
-   stylized facts (`FC-1` … `FC-10`) are measured from a 295-country,
+   stylized facts (`FC-1` … `FC-10`) are measured from a 178-country,
    62-year panel and stated as falsification targets first.
 2. **Derive, don't assume.** Every axiom is justified by pointing to which
    specific stylized fact(s) require it and why a simpler alternative fails
