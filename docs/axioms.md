@@ -3,10 +3,10 @@
 > This page summarizes, in plain language, what each of the article's
 > six axioms says and why it's there. It intentionally omits the formal
 > statements, the derivations, and the falsification conditions — those
-> live in §"Axiomatic Foundation" of the article
-> (`article/F01_Doc_journal.pdf`), which is the
-> only authoritative source for them. Numbers below are illustrative
-> pointers to the article, not independent claims.
+> live in §"Axiomatic Foundation" of the article (not distributed in
+> this repository while under journal review — see [`../README.md`](../README.md)),
+> which is the only authoritative source for them. Numbers below are
+> illustrative pointers to the article, not independent claims.
 
 All six axioms exist to explain ten empirically observed patterns
 ("stylized facts," labeled `FC-1` through `FC-10` in the article) as

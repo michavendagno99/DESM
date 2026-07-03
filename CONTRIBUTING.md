@@ -6,8 +6,8 @@ the **reference implementation**, subject to the rule below.
 
 ## The one hard rule
 
-**The article is not open for contribution.** This means
-[`article/F01_Doc_journal.pdf`](article/F01_Doc_journal.pdf) itself.
+**The article is not open for contribution.** It is not distributed in
+this repository (it is under journal review — see [`README.md`](README.md)).
 
 Do not open pull requests that edit text, equations, figures, tables,
 citations, or notation in the article. Scientific corrections belong in

@@ -6,9 +6,9 @@
 > (§"Intuitive Summary: Five Results Without Equations") and framing
 > sections; it is not a substitute for them, and any number quoted below
 > should be checked against the article before being relied upon. For
-> the formal statements, see the article
-> (`article/F01_Doc_journal.pdf`). For the axioms
-> themselves, see [`axioms.md`](axioms.md).
+> the formal statements, see the article (not distributed in this
+> repository while under journal review — see [`../README.md`](../README.md)).
+> For the axioms themselves, see [`axioms.md`](axioms.md).
 
 ## Start with one idea: a country's wealth is a path, not a point
 

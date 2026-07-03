@@ -66,23 +66,26 @@ The fastest way to trust (or challenge) any number above is to run the code that
 ├── data/                        ← provenance notes only; raw datasets are not distributed in this repo
 │   ├── README.md
 │   └── sources.txt              ← source-by-source notes (World Bank, WGI, QoG, Barro-Lee, CEPII, ...)
-└── article/                     ← the article and the code behind it
-    ├── F01_Doc_journal.pdf      ← ★ the article
+└── article/                     ← the code behind the article
     └── code/                    ← ★ reference implementation (Python) backing every
                                       estimate, table, and figure in the article
 ```
 
-This repository holds only what is needed to read the article and run the
-code behind it — no drafts, no intermediate results, no process
-documents. Earlier exploratory work, including the project's falsified
-predecessor ("DESM V1," see [Headline results](#headline-results) above
-and [`docs/faq.md`](docs/faq.md)), is not distributed here.
+This repository holds only what is needed to run the code behind the
+article — no drafts, no intermediate results, no process documents.
+Earlier exploratory work, including the project's falsified predecessor
+("DESM V1," see [Headline results](#headline-results) above and
+[`docs/faq.md`](docs/faq.md)), is not distributed here.
 
 **The article is the sole authoritative source for the theory.** Everything under `docs/` is explanatory scaffolding around it and must never be treated as a substitute for, or extension of, its content.
 
 ## The article
 
-- **Read it:** [`article/F01_Doc_journal.pdf`](article/F01_Doc_journal.pdf)
+The article itself (`F01_Doc_journal.pdf`) is **not distributed in this
+repository** — it is currently under journal review, and the journal's
+policy does not permit public posting while under submission (see
+[`LICENSE`](LICENSE)). Contact the author for a copy (see contact details
+above).
 
 ## Reference implementation
 

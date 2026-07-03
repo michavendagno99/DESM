@@ -1,11 +1,12 @@
 # Reference implementation
 
 Python code implementing the estimation, simulation, and figure-generation
-pipeline behind the article
-[`F01_Doc_journal.pdf`](../F01_Doc_journal.pdf). Table 6.x ("Correspondence
-between mathematical objects and Python identifiers") in the article's
-*Computational Implementation* section maps specific classes and functions
-in these modules to the theorems and equations they compute.
+pipeline behind the article (not distributed in this repository while
+under journal review — see [`../../README.md`](../../README.md)). Table
+6.x ("Correspondence between mathematical objects and Python identifiers")
+in the article's *Computational Implementation* section maps specific
+classes and functions in these modules to the theorems and equations they
+compute.
 
 This is the only code in the repository — everything here is needed to
 reproduce a result from the article; nothing here is exploratory or

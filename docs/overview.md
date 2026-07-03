@@ -1,8 +1,9 @@
 # Project overview
 
 > This page explains what the project is trying to do and why. It does not
-> restate the article's results — for those, read the article
-> ([`article/F01_Doc_journal.pdf`](../article/F01_Doc_journal.pdf)).
+> restate the article's results — for those, read the article itself
+> (not distributed in this repository while under journal review — see
+> [`../README.md`](../README.md)).
 
 ## The question
 

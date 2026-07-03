@@ -2,7 +2,8 @@
 
 > Answers here paraphrase and point to the article; they do not add new
 > claims. Where a number is quoted, verify it against the article
-> (`article/F01_Doc_journal.pdf`) before citing it.
+> (not distributed in this repository while under journal review —
+> see [`../README.md`](../README.md)) before citing it.
 
 ### What is DESM, in one sentence?
 

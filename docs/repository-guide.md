@@ -19,19 +19,19 @@ Repository/                                  ← repository root
 ├── docs/                                    ← you are here — explanatory documentation
 ├── data/                                    ← provenance/source notes only (no raw datasets)
 └── article/
-    ├── F01_Doc_journal.pdf                  ← ★ THE ARTICLE
     └── code/                                ← ★ THE REFERENCE IMPLEMENTATION
 ```
 
-Two entries carry a star above because they are the two things a reader
-actually came here for; everything else supports them. Read the article
-(`F01_Doc_journal.pdf`) for "what does the paper actually say" — it is the
-single, authoritative, submission-ready source; nothing in `docs/` or the
-reference implementation supersedes it.
+The article itself is not distributed in this repository — it is under
+journal review, and the journal's policy does not permit public posting
+while under submission (see [`../README.md`](../README.md) for contact
+details). `article/code/` carries a star above because it is the one
+thing here that stands on its own for a reader; nothing in `docs/`
+supersedes the article for "what does the paper actually say."
 
-This repository intentionally holds only what is needed to read the
-article and run the code behind it — no drafts, no intermediate results,
-no process documents. If you're looking for exploratory notebooks, working
+This repository intentionally holds only what is needed to run the code
+behind the article — no drafts, no intermediate results, no process
+documents. If you're looking for exploratory notebooks, working
 drafts, or superseded framework versions, they don't belong here by
 design; see [`faq.md`](faq.md#is-there-a-desm-v1-what-happened-to-it) for
 where the project's falsified predecessor ("DESM V1") is discussed.

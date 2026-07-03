@@ -2,9 +2,9 @@
 
 > A quick-reference table for the symbols used throughout the article.
 > This page is a navigation aid, not a definition source — every symbol's
-> precise, formal definition is in the article
-> (`article/F01_Doc_journal.pdf`); consult it
-> before relying on any meaning given here.
+> precise, formal definition is in the article (not distributed in this
+> repository while under journal review — see [`../README.md`](../README.md));
+> consult it before relying on any meaning given here.
 
 ## Core state variables
 
