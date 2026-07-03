@@ -1,0 +1,42 @@
+# ── LaTeX build artifacts ────────────────────────────────────────────────
+# Compiled PDFs of the manuscript are tracked deliberately (not ignored).
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+compile.log
+
+# ── Python ───────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+*.egg-info/
+
+# ── OS / editor cruft ────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.vscode/
+.idea/
+
+# ── Local scratch / temp outputs ────────────────────────────────────────
+*.tmp
+*.bak
+~$*

@@ -1,0 +1,111 @@
+DATA SOURCES
+============
+Provenance notes for every dataset used in this study. The raw files
+themselves are not distributed in this repository — see ../README.md for
+why, and for where to obtain each one.
+
+
+1. Worldwide Governance Indicators (WGI)
+-----------------------------------------
+File(s):    Data_Worldwide_Governance_Indicators_WB.xlsx
+Publisher:  World Bank
+Coverage:   200+ economies, 1996-2024, annual
+Used for:   The institutional-quality index (q_i) used to estimate the
+            governance coupling coefficient (gamma).
+
+The WGI measures governance along six dimensions: Voice and
+Accountability, Political Stability, Government Effectiveness, Regulatory
+Quality, Rule of Law, and Control of Corruption. Each dimension is built
+from perception data pooled across 35 cross-country sources (household
+surveys, firm surveys, and expert assessments), which lets the WGI compare
+governance quality across countries on a common scale even though no two
+countries are evaluated by the same underlying survey.
+
+The WGI reports each dimension two ways: a standardized score (mean 0,
+unit variance across countries in a given year) and, since the 2025
+edition, an absolute 0-100 score anchored to fixed benchmark countries so
+that scores are comparable across years as well as across countries. The
+2025 edition also revised data-source screening, indicator mapping, and
+the aggregation model; all historical estimates back to 1996 were
+recalculated under the new methodology for consistency.
+
+
+2. World Development Indicators (WDI)
+---------------------------------------
+File(s):    Data_World_Development_Indicators_WB.xlsx
+Publisher:  World Bank
+Coverage:   200+ countries and territories, 1960-present, annual
+Used for:   The core macroeconomic panel — GDP per capita, investment
+            (gross fixed capital formation), and the other state and
+            control variables the model is built on.
+
+WDI is the World Bank's general-purpose development database: over 1,500
+indicators spanning economic growth, education, health, poverty, trade,
+energy, infrastructure, governance, and environmental sustainability,
+compiled from national statistical agencies and international sources.
+
+
+3. Sovereign default history
+-------------------------------
+Publisher:  Bank of Canada
+Used for:   Default-event labels for the sovereign default risk analysis.
+
+
+4. Barro-Lee Educational Attainment
+--------------------------------------
+File(s):    BarroLeeDataSet_*
+Used for:   Human capital proxy — average years of schooling and
+            educational attainment levels by country.
+
+
+5. CEPII Gravity Database — services trade barriers (EAV)
+--------------------------------------------------------------
+File(s):    EAV_2004_2007_2011
+Publisher:  CEPII
+Coverage:   118 countries, 9 service sectors; reference years 2004, 2007,
+            2011
+Used for:   Ad-valorem-equivalent restrictions on cross-border services
+            trade, as an instrument/control in the trade-openness channel.
+
+Built on the GTAP services-trade database for 2011, extending the method
+of Fontagné, Guillin, and Mitaritonna (2011) — who covered 64 countries in
+2004 — to a larger country set, with 2004 and 2007 estimates included for
+comparison.
+
+
+6. Global Financial Development Database
+--------------------------------------------
+File(s):    20220909-global-financial-development-database
+Publisher:  World Bank
+Coverage:   214 economies, 1960-2021, annual (108 indicators)
+Used for:   Private credit and other financial-depth variables.
+Last updated: September 2022.
+
+Organized around a "4x2" framework: depth, access, efficiency, and
+stability, each measured separately for financial institutions (e.g.
+banks, insurers) and financial markets (e.g. stock and bond markets). It
+builds on and extends the World Bank's earlier "Financial Development and
+Structure" database. See Cihak, Demirguc-Kunt, Feyen & Levine (2012),
+"Benchmarking Financial Systems around the World," World Bank Policy
+Research Working Paper 6175, for the methodology behind the framework.
+The World Bank does not warrant the accuracy of this dataset; consult the
+metadata tab and original data providers for point-level queries.
+
+
+7. Quality of Government (QoG) Standard dataset
+-----------------------------------------------------
+File(s):    qog_std_cs_jan26
+Publisher:  Quality of Government Institute, University of Gothenburg
+Coverage:   ~2,100 variables from 100+ source datasets
+Used for:   The composite governance cross-section, the settler-mortality
+            instrument (ajr_settmort), and the colonial-origin instrument
+            (ht_colonial) used in the instrumental-variables identification
+            of gamma.
+
+Two variants are relevant here: the cross-sectional (CS) version, which
+takes each country's most recent available year (2022, falling back to
+2023, then 2021, up to +/- 3 years if 2022 is missing), and the
+time-series (TS) version, which covers 1946-2025 at the country-year
+level. The QoG codebook documents every variable and its original source
+in full. The dataset won the Lijphart/Przeworski/Verba Award for Best
+Dataset (APSA Comparative Politics Section) in 2009.

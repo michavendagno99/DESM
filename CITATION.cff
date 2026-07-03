@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you reference this work, please cite it as below. This article is currently under journal submission; a formal published citation will replace this entry upon acceptance."
+type: article
+title: "A Minimal Axiomatic Theory of National Macroeconomic Dynamics with Emergent Regime Structure"
+authors:
+  - family-names: "Arias Avendaño"
+    given-names: "Michael Stephen"
+    orcid: "https://orcid.org/0009-0009-2778-3790"
+    email: mstephen-arias@javeriana.edu.co
+    affiliation: "Pontificia Universidad Javeriana, Facultad de Ingeniería, Bogotá, D.C., Colombia"
+abstract: >-
+  This paper develops a minimal axiomatic theory of national macroeconomic
+  dynamics using a 295-country, 62-year panel of World Bank development
+  indicators. Ten stylized facts drawn from this panel are established first
+  as falsification targets, prior to any modeling choice. Six mutually
+  independent, empirically necessitated axioms are then shown to generate
+  all ten facts as mathematical theorems. From this system a complete
+  five-regime partition of growth trajectories, an institutional poverty
+  trap, a persistence multiplier for growth shocks, and structural
+  cross-country wealth divergence are derived as formal theorems. The
+  model's eleven structural parameters are estimated from the panel, and
+  regime-conditional policy prescriptions are derived for eight countries
+  spanning all five regimes.
+keywords:
+  - axiomatization
+  - macrodynamics
+  - institutions
+  - economic convergence
+  - poverty trap
+  - instrumental variables
+  - settler mortality
+license: LicenseRef-All-Rights-Reserved
+repository: "article/F01_Doc_journal.pdf"
+date-released: "2026-07-02"
+status: "Preprint / under journal submission"
