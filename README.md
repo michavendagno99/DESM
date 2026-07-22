@@ -10,6 +10,10 @@ This repository accompanies the article *"A Minimal Axiomatic Theory of National
 
 ---
 
+![Animation of ten countries moving through DESM's institutional-quality x growth-drift state space, 1996-2021](docs/figures/state_space.gif)
+
+*Ten countries' 1996–2021 paths through the state space the article's six axioms generate: institutional quality (x-axis, standardized WGI composite) vs. a 10-year trailing growth drift (y-axis), diagonal lines are the model's predicted drift at fixed investment rates, bands (right key) are the five growth regimes (R1–R4; R5 falls off this chart's scale — see the animation's own note, a headline finding of the article). The captions that surface as it plays flag the real events behind each move, including a base-effect artifact in Venezuela's 2010–14 reading that is called out rather than hidden. Built from public World Bank WDI/WGI data and the article's calibrated equations (M06, Table 6.1) — an illustrative rendering for this repository, not a figure reproduced from the article itself. See [`docs/model-explained.md`](docs/model-explained.md) for the ideas behind it.*
+
 ## The 30-second version
 
 Why do some countries stay rich, some catch up, and some fall into poverty traps they can't seem to escape? Growth economics has plenty of answers — but most of them work by picking equations that look reasonable, fitting them to data, and checking that the fit is decent. That makes it very hard for the data to actually *prove a growth model wrong*.
@@ -62,7 +66,8 @@ The fastest way to trust (or challenge) any number above is to run the code that
 │   ├── notation.md              ← notation used throughout the article
 │   ├── glossary.md              ← glossary of terms
 │   ├── faq.md                   ← frequently asked questions
-│   └── repository-guide.md      ← how this repository is organized, for collaborators
+│   ├── repository-guide.md      ← how this repository is organized, for collaborators
+│   └── figures/                 ← illustrative images for this repo (not article figures)
 ├── data/                        ← provenance notes only; raw datasets are not distributed in this repo
 │   ├── README.md
 │   └── sources.txt              ← source-by-source notes (World Bank, WGI, QoG, Barro-Lee, CEPII, ...)
